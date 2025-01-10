@@ -612,3 +612,17 @@ header-icon img{
         padding: 2rem;
     }
 }
+
+/* Default image styling for larger screens */
+.image {
+    width: 100%;
+    max-width: 600px; /* Ensures image doesn’t get too large */
+    height: auto;
+}
+
+/* Smaller screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .image {
+        max-width: 300px; /* Shrinks image for small devices */
+    }
+}
